@@ -63,7 +63,7 @@ for(site in 1:number_of_site){  # first for loop: loop from 1 to number_of_site,
 } # end of first loop, now all blocks processed and added to sites
 
 # Convert the list to a data frame
-df <- data.frame(Strings = unlist(sites), stringsAsFactors = FALSE)
+df <- data.frame(x = unlist(sites), stringsAsFactors = FALSE)
 
 # Save the data frame to a CSV file
 write.csv(df, file = "result.csv", row.names = FALSE)
