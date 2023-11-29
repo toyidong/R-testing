@@ -39,8 +39,8 @@ data <- read.csv(csv_file)
 # get data from 2nd column, leave row number as blank so that all rows in 2nd column will be retrieved
 column_data <- data[ ,2]
 
-# Now we need to know how many rows in this column, use nrow(dataframe) function to get row number
-num_rows <- nrow(df)
+# Now we need to know how many rows in this column, use nrow(dataframe) function to get row number in dataframe
+num_rows <- nrow(data)
 
 # Iterate through column_data, each name will be the name for one site
 for(i in 1:num_rows){
