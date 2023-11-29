@@ -23,7 +23,7 @@ for(i in 1:length(names)){
     # because those code are to create blocks, with site_name just created
     # refer to Example for Option 2, code truncated for simplicity
 
-}
+} # end of Example for Option 1 #####
 
 
 ################ Example for Option 2 ################
