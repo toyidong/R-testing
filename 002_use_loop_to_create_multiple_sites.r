@@ -40,6 +40,9 @@ data <- read.csv(csv_file)
 column_data <- data[ ,2]
 
 # Now we need to know how many rows in this column, use nrow(dataframe) function to get row number in dataframe
+# because your code do not know exact number of rows in that CSV file, 
+# use for(i in 1:num_rows) to iterate through column_data, 
+# in this way, when you want to read from another CSV file with different number of rows, your code can process as well
 num_rows <- nrow(data)
 
 # Iterate through column_data, each name will be the name for one site
